@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TIENDA STORE Noemí</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <div class="header">
+
+    <h1>TIENDA STORE Noemí</h1>
+
+  </div>
+
+  <!-- BOTÓN LUPA -->
+
+  <button id="searchToggle" class="search-btn">🔍</button>
+
+  <!-- BUSCADOR MINI -->
+
+  <div id="searchBox" class="search-box">
+
+    <div class="search-top">
+
+      <span class="close-search" id="closeSearch">X</span>
+
+    </div>
+
+    <p class="address">
+
+      🌎 Juigalpa, Nicaragua — Frente al nuevo estadio
+
+    </p>
+
+    <div class="categories">
+
+      <button class="cat-btn" data-cat="zapatos">Zapatos</button>
+
+      <button class="cat-btn" data-cat="camisas">Camisas</button>
+
+      <button class="cat-btn" data-cat="camisolas">Camisolas</button>
+
+      <button class="cat-btn" data-cat="niños">Ropa para niño</button>
+
+      <button class="cat-btn" data-cat="niñas">Ropa para niña</button>
+
+      <button class="cat-btn" data-cat="blusas">Blusas</button>
+
+      <button class="cat-btn" data-cat="relojes">Relojes</button>
+
+      <button class="cat-btn" data-cat="perfumes">Perfumes</button>
+
+      <button class="cat-btn" data-cat="carteras">Carteras</button>
+
+      <button class="cat-btn" data-cat="pantalones">Pantalones</button>
+
+      <button class="cat-btn" data-cat="mujer">Pantalones de mujer</button>
+
+      <button class="cat-btn" data-cat="todos">Ver todo</button>
+
+    </div>
+
+  </div>
+
+  <!-- PRODUCTOS -->
+
+  <div class="container" id="container">
+
+    <!-- CAMISAS -->
+
+    <div class="card" data-category="camisas">
+
+      <img class="product-img" src="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/8676395a81/Screenshot_2026-01-17-10-24-58-542_com.google.android.apps.photosgo~4.jpg" alt="Camisa Polo Elegante 1">
+
+      <h3>Camisa Polo Elegante (1)</h3>
+
+      <div class="price">55 dólares</div>
+
+      <button class="open-modal" data-img="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/8676395a81/Screenshot_2026-01-17-10-24-58-542_com.google.android.apps.photosgo~4.jpg" data-price="55 dólares" data-name="Camisa Polo Elegante (1)">Ver</button>
+
+    </div>
+
+    <div class="card" data-category="camisas">
+
+      <img class="product-img" src="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/8676395a81fd06f6f2a97712c20e971bc0822905/Screenshot_2026-01-17-10-25-27-748_com.google.android.apps.photosgo~2.jpg" alt="Camisa Polo Elegante 2">
+
+      <h3>Camisa Polo Elegante (2)</h3>
+
+      <div class="price">55 dólares</div>
+
+      <button class="open-modal" data-img="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/8676395a81fd06f6f2a97712c20e971bc0822905/Screenshot_2026-01-17-10-25-27-748_com.google.android.apps.photosgo~2.jpg" data-price="55 dólares" data-name="Camisa Polo Elegante (2)">Ver</button>
+
+    </div>
+
+    <div class="card" data-category="camisas">
+
+      <img class="product-img" src="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/8676395a81fd06f6f2a97712c20e971bc0822905/Screenshot_2026-01-17-10-25-12-906_com.google.android.apps.photosgo~2.jpg" alt="Camisa Polo Elegante 3">
+
+      <h3>Camisa Polo Elegante (3)</h3>
+
+      <div class="price">55 dólares</div>
+
+      <button class="open-modal" data-img="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/8676395a81fd06f6f2a97712c20e971bc0822905/Screenshot_2026-01-17-10-25-12-906_com.google.android.apps.photosgo~2.jpg" data-price="55 dólares" data-name="Camisa Polo Elegante (3)">Ver</button>
+
+    </div>
+
+    <div class="card" data-category="camisas">
+
+      <img class="product-img" src="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/8676395a81fd06f6f2a97712c20e971bc0822905/Screenshot_2026-01-17-10-25-36-937_com.google.android.apps.photosgo~2.jpg" alt="Camisa Polo Elegante 4">
+
+      <h3>Camisa Polo Elegante (4)</h3>
+
+      <div class="price">55 dólares</div>
+
+      <button class="open-modal" data-img="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/8676395a81fd06f6f2a97712c20e971bc0822905/Screenshot_2026-01-17-10-25-36-937_com.google.android.apps.photosgo~2.jpg" data-price="55 dólares" data-name="Camisa Polo Elegante (4)">Ver</button>
+
+    </div>
+
+    <!-- RELOJES -->
+
+    <div class="card" data-category="relojes">
+
+      <img class="product-img" src="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/e801919a8ea9b3bcff24eba23da59b82a4cd5be1/Screenshot_2026-01-17-10-26-09-731_com.google.android.apps.photosgo.jpg" alt="Reloj Fossil 1">
+
+      <h3>Reloj Fossil para hombre (1)</h3>
+
+      <div class="price">120 dólares</div>
+
+      <button class="open-modal" data-img="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/e801919a8ea9b3bcff24eba23da59b82a4cd5be1/Screenshot_2026-01-17-10-26-09-731_com.google.android.apps.photosgo.jpg" data-price="120 dólares" data-name="Reloj Fossil para hombre (1)">Ver</button>
+
+    </div>
+
+    <div class="card" data-category="relojes">
+
+      <img class="product-img" src="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/f9757d33318f2b8d2cbdccf0cd36b250c6b6ed62/Screenshot_2026-01-17-10-26-06-044_com.google.android.apps.photosgo~2.jpg" alt="Reloj Fossil 2">
+
+      <h3>Reloj Fossil para hombre (2)</h3>
+
+      <div class="price">120 dólares</div>
+
+      <button class="open-modal" data-img="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/f9757d33318f2b8d2cbdccf0cd36b250c6b6ed62/Screenshot_2026-01-17-10-26-06-044_com.google.android.apps.photosgo~2.jpg" data-price="120 dólares" data-name="Reloj Fossil para hombre (2)">Ver</button>
+
+    </div>
+
+    <div class="card" data-category="relojes">
+
+      <img class="product-img" src="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/7e6f12806118c2e245fc0f7a8ee368a2bbad589d/Screenshot_2026-01-17-10-26-13-040_com.google.android.apps.photosgo~2.jpg" alt="Reloj Fossil 3">
+
+      <h3>Reloj Fossil para Mujer (3)</h3>
+
+      <div class="price">120 dólares</div>
+
+      <button class="open-modal" data-img="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/7e6f12806118c2e245fc0f7a8ee368a2bbad589d/Screenshot_2026-01-17-10-26-13-040_com.google.android.apps.photosgo~2.jpg" data-price="120 dólares" data-name="Reloj Fossil para Mujer (3)">Ver</button>
+
+    </div>
+
+    <!-- ZAPATOS -->
+
+    <div class="card" data-category="zapatos">
+
+      <img class="product-img" src="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/f06b993ab2c8b57ff70217f4349f40681c1dd672/Screenshot_2026-01-17-10-24-45-849_com.google.android.apps.photosgo~2.jpg" alt="Zapato 1">
+
+      <h3>Zapato para hombre para excursión</h3>
+
+      <div class="price">40 dólares</div>
+
+      <button class="open-modal" data-img="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/f06b993ab2c8b57ff70217f4349f40681c1dd672/Screenshot_2026-01-17-10-24-45-849_com.google.android.apps.photosgo~2.jpg" data-price="40 dólares" data-name="Zapato para hombre para excursión">Ver</button>
+
+    </div>
+
+    <div class="card" data-category="zapatos">
+
+      <img class="product-img" src="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/f06b993ab2c8b57ff70217f4349f40681c1dd672/Screenshot_2026-01-17-15-08-04-618_com.google.android.apps.photosgo~2.jpg" alt="Zapato 2">
+
+      <h3>Zapato deportivo casual blanco</h3>
+
+      <div class="price">30 dólares</div>
+
+      <button class="open-modal" data-img="https://raw.githubusercontent.com/maryorithmarin-hue/Tienda/f06b993ab2c8b57ff70217f4349f40681c1dd672/Screenshot_2026-01-17-15-08-04-618_com.google.android.apps.photosgo~2.jpg" data-price="30 dólares" data-name="Zapato deportivo casual blanco">Ver</button>
+
+    </div>
+
+  </div>
+
+  <!-- MODAL -->
+
+  <div id="modal" class="modal">
+
+    <div class="modal-content">
+
+      <span class="close">X</span>
+
+      <img id="modal-img" src="" alt="Producto">
+
+      <div id="modal-price" class="modal-price"></div>
+
+      <a id="whatsappBtn" class="whatsapp-btn" href="#" target="_blank">Comprar por WhatsApp</a>
+
+    </div>
+
+  </div>
+
+<script>
+
+  const searchToggle = document.getElementById("searchToggle");
+
+  const searchBox = document.getElementById("searchBox");
+
+  const closeSearch = document.getElementById("closeSearch");
+
+  const catBtns = document.querySelectorAll(".cat-btn");
+
+  const cards = document.querySelectorAll(".card");
+
+  // ABRIR BUSCADOR
+
+  searchToggle.addEventListener("click", () => {
+
+    searchBox.style.display = "block";
+
+  });
+
+  // CERRAR BUSCADOR
+
+  closeSearch.addEventListener("click", () => {
+
+    searchBox.style.display = "none";
+
+  });
+
+  // MOSTRAR TODO (VER TODO)
+
+  function showAllProducts() {
+
+    cards.forEach(card => {
+
+      card.style.display = "flex";
+
+    });
+
+  }
+
+  // BUSCAR POR CATEGORÍA
+
+  catBtns.forEach(btn => {
+
+    btn.addEventListener("click", () => {
+
+      const cat = btn.dataset.cat;
+
+      if (cat === "todos") {
+
+        showAllProducts();
+
+        return;
+
+      }
+
+      let found = false;
+
+      cards.forEach(card => {
+
+        if (card.dataset.category === cat) {
+
+          card.style.display = "flex";
+
+          found = true;
+
+        } else {
+
+          card.style.display = "none";
+
+        }
+
+      });
+
+      if (!found) {
+
+        alert("Producto no existente en el inventario");
+
+      }
+
+    });
+
+  });
+
+  // MODAL
+
+  const modal = document.getElementById("modal");
+
+  const modalImg = document.getElementById("modal-img");
+
+  const modalPrice = document.getElementById("modal-price");
+
+  document.querySelectorAll(".open-modal").forEach(btn => {
+
+    btn.addEventListener("click", function() {
+
+      const img = this.dataset.img;
+
+      const price = this.dataset.price;
+
+      const name = this.dataset.name;
+
+      modal.style.display = "flex";
+
+      modalImg.src = img;
+
+      modalPrice.innerText = `${name} - ${price}`;
+
+      const msg = encodeURIComponent(`Hola, quiero comprar: ${name} - ${price}`);
+
+      document.getElementById("whatsappBtn").href = `https://wa.me/50584908088?text=${msg}`;
+
+    });
+
+  });
+
+  document.querySelector(".close").addEventListener("click", () => {
+
+    modal.style.display = "none";
+
+  });
+
+  window.addEventListener("click", (e) => {
+
+    if (e.target == modal) {
+
+      modal.style.display = "none";
+
+    }
+
+  });
+
+</script>
+<script>
+
+  const SHEET_URL = "https://docs.google.com/spreadsheets/d/1l3IuIq2WPCMI-72WcfwIX-7DDLGqYUWfSTEA2V6q7vA/gviz/tq?tqx=out:json&gid=0";
+
+  async function getProducts() {
+
+    const res = await fetch(SHEET_URL);
+
+    const text = await res.text();
+
+    // Google Sheets devuelve un JSON envuelto en texto
+
+    const json = JSON.parse(text.substring(47).slice(0, -2));
+
+    const rows = json.table.rows;
+
+    // Convertir filas en productos
+
+    const products = rows.map(r => {
+
+      return {
+
+        id: r.c[0]?.v,
+
+        producto: r.c[1]?.v,
+
+        categoria: r.c[2]?.v,
+
+        precio: r.c[3]?.v,
+
+        cantidad: r.c[4]?.v,
+
+        foto: r.c[5]?.v,
+
+        estado: r.c[6]?.v
+
+      };
+
+    });
+
+    return products;
+
+  }
+
+  function renderProducts(products) {
+
+    const container = document.getElementById("container");
+
+    container.innerHTML = "";
+
+    products.forEach(p => {
+
+      const card = document.createElement("div");
+
+      card.classList.add("card");
+
+      card.dataset.category = p.categoria.toLowerCase();
+
+      card.innerHTML = `
+
+        <img class="product-img" src="${p.foto}" alt="${p.producto}">
+
+        <h3>${p.producto}</h3>
+
+        <div class="price">${p.precio} dólares</div>
+
+        <button class="open-modal"
+
+          data-img="${p.foto}"
+
+          data-price="${p.precio}"
+
+          data-name="${p.producto}"
+
+          data-estado="${p.estado}">
+
+          Ver
+
+        </button>
+
+      `;
+
+      container.appendChild(card);
+
+    });
+
+    initModal();
+
+    initFilterButtons();
+
+  }
+
+  async function init() {
+
+    const products = await getProducts();
+
+    renderProducts(products);
+
+  }
+
+  init();
+
+  // Modal
+
+  function initModal() {
+
+    const modal = document.getElementById("modal");
+
+    const modalImg = document.getElementById("modal-img");
+
+    const modalPrice = document.getElementById("modal-price");
+
+    document.querySelectorAll(".open-modal").forEach(btn => {
+
+      btn.addEventListener("click", function() {
+
+        const img = this.dataset.img;
+
+        const price = this.dataset.price;
+
+        const name = this.dataset.name;
+
+        const estado = this.dataset.estado;
+
+        modal.style.display = "flex";
+
+        modalImg.src = img;
+
+        modalPrice.innerText = `${name} - ${price} - ${estado}`;
+
+        const msg = encodeURIComponent(`Hola, quiero comprar: ${name} - ${price} (${estado})`);
+
+        document.getElementById("whatsappBtn").href = `https://wa.me/50584908088?text=${msg}`;
+
+      });
+
+    });
+
+  }
+
+  // Filter buttons
+
+  function initFilterButtons() {
+
+    const catBtns = document.querySelectorAll(".cat-btn");
+
+    const cards = document.querySelectorAll(".card");
+
+    catBtns.forEach(btn => {
+
+      btn.addEventListener("click", () => {
+
+        const cat = btn.dataset.cat;
+
+        cards.forEach(card => {
+
+          if (cat === "todos") {
+
+            card.style.display = "flex";
+
+          } else {
+
+            card.style.display = (card.dataset.category === cat) ? "flex" : "none";
+
+          }
+
+        });
+
+      });
+
+    });
+
+  }
+
+</script>
+</body>
+
+</html>
