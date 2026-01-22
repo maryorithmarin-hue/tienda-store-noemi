@@ -94,7 +94,11 @@ function showProducts(list) {
 
       <!-- SOLO SI ESTÁ AGOTADO -->
 
-      ${product.estado.toLowerCase() === "agotado" ? `
+      ${product.estado?.trim().toLowerCase() === "agotado" ? `
+      .estado {
+  font-weight: bold;
+  color: #b3005c;
+      }
 
         <button class="solicitar-btn" data-name="${product.producto}">
 
@@ -164,7 +168,9 @@ catBtns.forEach(btn => {
 
     }
 
-    const filtered = products.filter(p => p.categoria.toLowerCase() === cat.toLowerCase());
+    const filtered = products.filter(
+  p => p.categoria.toLowerCase().trim() === cat.toLowerCase().trim()
+);
 
     if (filtered.length === 0) {
 
